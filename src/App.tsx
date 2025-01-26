@@ -1,10 +1,9 @@
-import { Button } from "./components/ui/button";
+import { Outlet } from "react-router";
 
 const App = () => {
   return (
     <div>
-      <p> HELLO I Am App </p>
-      <Button>Click me</Button>
+      <Outlet />
     </div>
   );
 };
