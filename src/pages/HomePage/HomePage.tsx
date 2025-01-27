@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import bannerImg from "../../assets/images/banner.jpg";
+import { Link } from "react-router";
 const HomePage = () => {
   return (
     <div className="relative w-screen h-screen">
@@ -17,9 +17,12 @@ const HomePage = () => {
           your smarts
         </p>
         <div className="flex items-center gap-4 mt-10">
-          <Button className="rounded-xl bg-[#ffffffe0] text-[#000000dd] hover:text-[#000] hover:bg-white">
-            Join now
-          </Button>
+          <Link to="/game">
+            <Button className="rounded-xl bg-[#ffffffe0] text-[#000000dd] hover:text-[#000] hover:bg-white">
+              Play now
+            </Button>
+          </Link>
+
           <Button className="rounded-xl text-[#ffffffa2] hover:text-[#fff]">
             Create a lobby
           </Button>
