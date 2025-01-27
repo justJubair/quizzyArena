@@ -3,11 +3,6 @@ import { Link } from "react-router";
 const HomePage = () => {
   return (
     <div className="relative w-screen h-screen">
-      <div className="absolute inset-0 bg-black">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff20_1px,transparent_1px),linear-gradient(to_bottom,#ffffff20_1px,transparent_1px)] bg-[size:52px_52px]">
-          <div className="absolute inset-0 animate-grid-shift bg-[radial-gradient(#ffffff50_1px,transparent_1px)] bg-[size:52px_52px] opacity-50"></div>
-        </div>
-      </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-30">
         <h1 className=" monage-font text-white text-6xl text-center w-[1000px]">
           Quiz. Compete. Conquer.
@@ -22,10 +17,11 @@ const HomePage = () => {
               Play now
             </Button>
           </Link>
-
-          <Button className="rounded-xl text-[#ffffffa2] hover:text-[#fff]">
-            Create a lobby
-          </Button>
+          <Link to="/lobby">
+            <Button className="rounded-xl text-[#ffffffa2] hover:text-[#fff]">
+              Create a lobby
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
