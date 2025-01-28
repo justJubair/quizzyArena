@@ -1,50 +1,118 @@
-# React + TypeScript + Vite
+# Multiplayer Quiz Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time multiplayer quiz application where users can create private game rooms, invite friends, and compete against each other in quiz challenges.
 
-Currently, two official plugins are available:
+## 🔴 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Frontend: https://quizzy-arena.vercel.app
+- Backend API: https://quizzy-arena-backend.vercel.app
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Create private game rooms
+- Join existing games via game code
+- Real-time player updates
+- Timed quiz questions
+- Live score tracking
+- Responsive design
+- Multiplayer support (up to 4 players)
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Framework:** React + TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Icons:** Lucide React
+- **Backend:** Node.js + Express
+- **Database:** MongoDB
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/justJubair/quizzyArena.git
+cd quizzyArena
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
+# or
+yarn install
 ```
+
+3. Start the development server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app should now be running on `http://localhost:5173`
+
+## 📁 Project Structure
+
+```
+src/
+├── components/         # Reusable UI components
+├── pages/             # Page components
+├── lib/               # Utility functions
+├── hooks/             # Custom React hooks
+└── types/             # TypeScript type definitions
+```
+
+## 🎮 How to Play
+
+1. **Create a Game**
+
+   - Click "Create New Game"
+   - Enter your nickname
+   - Share the generated game code with friends
+
+2. **Join a Game**
+
+   - Click "Join Existing Game"
+   - Enter your nickname
+   - Input the game code
+   - Wait for the host to start
+
+3. **During the Game**
+   - Answer questions within the time limit
+   - See immediate feedback on answers
+   - Track scores in real-time
+   - Complete all questions to see final results
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
+
+## 👥 Authors
+
+- Jubair Ahmed - [@justJubair](https://github.com/justJubair)
+
+## 🙏 Acknowledgements
+
+- [shadcn/ui](https://ui.shadcn.com) for the beautiful UI components
+- [Lucide](https://lucide.dev) for the icons
+- [Tailwind CSS](https://tailwindcss.com) for the styling system
+
+## 📞 Contact
+
+For any questions or feedback, please reach out to [jubair.ahmed2838@email.com](mailto:jubair.ahmed2838@email.com)
